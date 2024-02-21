@@ -1,0 +1,5 @@
+USERNAME: TESTUSER1
+SITES:
+  ANHELO:
+    QA: https://qa.anhelosalud.com/
+    PROD: https://www.anhelosalud.com/

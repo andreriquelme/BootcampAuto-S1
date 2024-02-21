@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.10.6 on win32)" generated="20240219 16:51:34.794" rpa="false" schemaversion="4">
+<suite id="s1" name="BootcampS3-Andre" source="C:\Users\andre.riquelme\Documents\GitHub\BootcampS3-Andre">
+<suite id="s1-s1" name="Sesion2" source="C:\Users\andre.riquelme\Documents\GitHub\BootcampS3-Andre\Sesion2">
+<suite id="s1-s1-s1" name="Workshop03" source="C:\Users\andre.riquelme\Documents\GitHub\BootcampS3-Andre\Sesion2\workshop03.robot">
+<test id="s1-s1-s1-t1" name="Open google" line="7">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.google.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240219 16:51:34.944" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240219 16:51:38.144" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20240219 16:51:38.143" endtime="20240219 16:51:38.144"/>
+</kw>
+<msg timestamp="20240219 16:51:38.144" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 121.0.6167.185 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0046A813+48355]
+	(No symbol) [0x003FC4B1]
+	(No symbol) [0x00305358]
+	(No symbol) [0x003261AC]
+	(No symbol) [0x00321EF3]
+	(No symbol) [0x00320579]
+	(No symbol) [0x00350C55]
+	(No symbol) [0x0035093C]
+	(No symbol) [0x0034A536]
+	(No symbol) [0x003282DC]
+	(No symbol) [0x003293DD]
+	GetHandleVerifier [0x006CAABD+2539405]
+	GetHandleVerifier [0x0070A78F+2800735]
+	GetHandleVerifier [0x0070456C+2775612]
+	GetHandleVerifier [0x004F51E0+616112]
+	(No symbol) [0x00405F8C]
+	(No symbol) [0x00402328]
+	(No symbol) [0x0040240B]
+	(No symbol) [0x003F4FF7]
+	BaseThreadInitThunk [0x77B4FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77CA7C5E+286]
+	RtlGetAppContainerNamedObjectPath [0x77CA7C2E+238]
+</msg>
+<status status="FAIL" starttime="20240219 16:51:34.944" endtime="20240219 16:51:38.146"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20240219 16:51:38.154" endtime="20240219 16:51:38.154"/>
+</kw>
+<tag>testweb</tag>
+<status status="FAIL" starttime="20240219 16:51:34.944" endtime="20240219 16:51:38.154">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 121.0.6167.185 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0046A813+48355]
+	(No symbol) [0x003FC4B1]
+	(No symbol) [0x00305358]
+	(No symbol) [0x003261AC]
+	(No symbol) [0x00321EF3]
+	(No symbol) [0x00320579]
+	(No symbol) [0x00350C55]
+	(No symbol) [0x0035093C]
+	(No symbol) [0x0034A536]
+	(No symbol) [0x003282DC]
+	(No symbol) [0x003293DD]
+	GetHandleVerifier [0x006CAABD+2539405]
+	GetHandleVerifier [0x0070A78F+2800735]
+	GetHandleVerifier [0x0070456C+2775612]
+	GetHandleVerifier [0x004F51E0+616112]
+	(No symbol) [0x00405F8C]
+	(No symbol) [0x00402328]
+	(No symbol) [0x0040240B]
+	(No symbol) [0x003F4FF7]
+	BaseThreadInitThunk [0x77B4FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77CA7C5E+286]
+	RtlGetAppContainerNamedObjectPath [0x77CA7C2E+238]
+</status>
+</test>
+<status status="FAIL" starttime="20240219 16:51:34.814" endtime="20240219 16:51:38.164"/>
+</suite>
+<status status="FAIL" starttime="20240219 16:51:34.814" endtime="20240219 16:51:38.164"/>
+</suite>
+<status status="FAIL" starttime="20240219 16:51:34.794" endtime="20240219 16:51:38.170"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">testweb</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="BootcampS3-Andre">BootcampS3-Andre</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Sesion2">BootcampS3-Andre.Sesion2</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Workshop03">BootcampS3-Andre.Sesion2.Workshop03</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
