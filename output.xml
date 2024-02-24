@@ -1,90 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1 (Python 3.10.6 on win32)" generated="20240219 17:11:13.515" rpa="false" schemaversion="4">
-<suite id="s1" name="Workshop03" source="c:\Users\andre.riquelme\Documents\GitHub\BootcampS3-Andre\Sesion2\workshop03.robot">
-<test id="s1-t1" name="Open google" line="7">
+<robot generator="Robot 6.1 (Python 3.10.6 on win32)" generated="20240223 23:37:41.950" rpa="false" schemaversion="4">
+<suite id="s1" name="Ejercicio2" source="c:\Users\andre.riquelme\Documents\GitHub\BootcampS3-Andre\Sesion2\Ejercicio2.robot">
+<test id="s1-t1" name="Generate Data" line="11">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>https://www.google.com/</arg>
+<arg>https://testpages.herokuapp.com/styled/validation/input-validation.html</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20240219 17:11:13.662" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20240219 17:11:16.909" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" starttime="20240219 17:11:16.909" endtime="20240219 17:11:16.909"/>
+<msg timestamp="20240223 23:37:42.114" level="INFO">Opening browser 'chrome' to base url 'https://testpages.herokuapp.com/styled/validation/input-validation.html'.</msg>
+<status status="PASS" starttime="20240223 23:37:42.113" endtime="20240223 23:37:44.637"/>
 </kw>
-<msg timestamp="20240219 17:11:16.912" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 121.0.6167.185 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
-Stacktrace:
-Backtrace:
-	GetHandleVerifier [0x0046A813+48355]
-	(No symbol) [0x003FC4B1]
-	(No symbol) [0x00305358]
-	(No symbol) [0x003261AC]
-	(No symbol) [0x00321EF3]
-	(No symbol) [0x00320579]
-	(No symbol) [0x00350C55]
-	(No symbol) [0x0035093C]
-	(No symbol) [0x0034A536]
-	(No symbol) [0x003282DC]
-	(No symbol) [0x003293DD]
-	GetHandleVerifier [0x006CAABD+2539405]
-	GetHandleVerifier [0x0070A78F+2800735]
-	GetHandleVerifier [0x0070456C+2775612]
-	GetHandleVerifier [0x004F51E0+616112]
-	(No symbol) [0x00405F8C]
-	(No symbol) [0x00402328]
-	(No symbol) [0x0040240B]
-	(No symbol) [0x003F4FF7]
-	BaseThreadInitThunk [0x77B4FCC9+25]
-	RtlGetAppContainerNamedObjectPath [0x77CA7C5E+286]
-	RtlGetAppContainerNamedObjectPath [0x77CA7C2E+238]
-</msg>
-<status status="FAIL" starttime="20240219 17:11:13.662" endtime="20240219 17:11:16.917"/>
+<kw name="Generate Random String" library="String">
+<var>${low}</var>
+<arg>8</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20240223 23:37:44.640" level="INFO">${low} = gX9KHzOs</msg>
+<status status="PASS" starttime="20240223 23:37:44.639" endtime="20240223 23:37:44.641"/>
 </kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="NOT RUN" starttime="20240219 17:11:16.930" endtime="20240219 17:11:16.930"/>
+<kw name="Generate Random String" library="String">
+<var>${hex}</var>
+<arg>1-20</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20240223 23:37:44.643" level="INFO">${hex} = g8Z3vKeqG</msg>
+<status status="PASS" starttime="20240223 23:37:44.642" endtime="20240223 23:37:44.643"/>
 </kw>
-<tag>testweb</tag>
-<status status="FAIL" starttime="20240219 17:11:13.662" endtime="20240219 17:11:16.932">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 121.0.6167.185 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
-Stacktrace:
-Backtrace:
-	GetHandleVerifier [0x0046A813+48355]
-	(No symbol) [0x003FC4B1]
-	(No symbol) [0x00305358]
-	(No symbol) [0x003261AC]
-	(No symbol) [0x00321EF3]
-	(No symbol) [0x00320579]
-	(No symbol) [0x00350C55]
-	(No symbol) [0x0035093C]
-	(No symbol) [0x0034A536]
-	(No symbol) [0x003282DC]
-	(No symbol) [0x003293DD]
-	GetHandleVerifier [0x006CAABD+2539405]
-	GetHandleVerifier [0x0070A78F+2800735]
-	GetHandleVerifier [0x0070456C+2775612]
-	GetHandleVerifier [0x004F51E0+616112]
-	(No symbol) [0x00405F8C]
-	(No symbol) [0x00402328]
-	(No symbol) [0x0040240B]
-	(No symbol) [0x003F4FF7]
-	BaseThreadInitThunk [0x77B4FCC9+25]
-	RtlGetAppContainerNamedObjectPath [0x77CA7C5E+286]
-	RtlGetAppContainerNamedObjectPath [0x77CA7C2E+238]
-</status>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=firstname</arg>
+<arg>${low}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240223 23:37:44.645" level="INFO">Typing text 'gX9KHzOs' into text field 'id=firstname'.</msg>
+<status status="PASS" starttime="20240223 23:37:44.644" endtime="20240223 23:37:44.759"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=surname</arg>
+<arg>${low}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240223 23:37:44.760" level="INFO">Typing text 'gX9KHzOs' into text field 'id=surname'.</msg>
+<status status="PASS" starttime="20240223 23:37:44.760" endtime="20240223 23:37:44.811"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=age</arg>
+<arg>${hex}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240223 23:37:44.813" level="INFO">Typing text 'g8Z3vKeqG' into text field 'id=age'.</msg>
+<status status="PASS" starttime="20240223 23:37:44.812" endtime="20240223 23:37:44.866"/>
+</kw>
+<tag>datrdm</tag>
+<status status="PASS" starttime="20240223 23:37:42.112" endtime="20240223 23:37:44.866"/>
 </test>
-<status status="FAIL" starttime="20240219 17:11:13.515" endtime="20240219 17:11:16.941"/>
+<status status="PASS" starttime="20240223 23:37:41.953" endtime="20240223 23:37:44.868"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="1" skip="0">testweb</stat>
+<stat pass="1" fail="0" skip="0">datrdm</stat>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Workshop03">Workshop03</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Ejercicio2">Ejercicio2</stat>
 </suite>
 </statistics>
 <errors>
