@@ -1,63 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1 (Python 3.10.6 on win32)" generated="20240223 23:37:41.950" rpa="false" schemaversion="4">
-<suite id="s1" name="Ejercicio2" source="c:\Users\andre.riquelme\Documents\GitHub\BootcampS3-Andre\Sesion2\Ejercicio2.robot">
-<test id="s1-t1" name="Generate Data" line="11">
+<robot generator="Robot 6.1 (Python 3.10.6 on win32)" generated="20240225 23:48:16.364" rpa="false" schemaversion="4">
+<suite id="s1" name="Ejercicio3" source="c:\Users\andre.riquelme\Documents\GitHub\BootcampS3-Andre\sesion2\ejercicio3.robot">
+<test id="s1-t1" name="Complete Data" line="12">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>https://testpages.herokuapp.com/styled/validation/input-validation.html</arg>
+<arg>https://testpages.eviltester.com/styled/basic-html-form-test.html</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20240223 23:37:42.114" level="INFO">Opening browser 'chrome' to base url 'https://testpages.herokuapp.com/styled/validation/input-validation.html'.</msg>
-<status status="PASS" starttime="20240223 23:37:42.113" endtime="20240223 23:37:44.637"/>
-</kw>
-<kw name="Generate Random String" library="String">
-<var>${low}</var>
-<arg>8</arg>
-<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
-<msg timestamp="20240223 23:37:44.640" level="INFO">${low} = gX9KHzOs</msg>
-<status status="PASS" starttime="20240223 23:37:44.639" endtime="20240223 23:37:44.641"/>
-</kw>
-<kw name="Generate Random String" library="String">
-<var>${hex}</var>
-<arg>1-20</arg>
-<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
-<msg timestamp="20240223 23:37:44.643" level="INFO">${hex} = g8Z3vKeqG</msg>
-<status status="PASS" starttime="20240223 23:37:44.642" endtime="20240223 23:37:44.643"/>
+<msg timestamp="20240225 23:48:16.495" level="INFO">Opening browser 'chrome' to base url 'https://testpages.eviltester.com/styled/basic-html-form-test.html'.</msg>
+<status status="PASS" starttime="20240225 23:48:16.495" endtime="20240225 23:48:18.574"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
-<arg>id=firstname</arg>
-<arg>${low}</arg>
+<arg>name=username</arg>
+<arg>Andre</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20240223 23:37:44.645" level="INFO">Typing text 'gX9KHzOs' into text field 'id=firstname'.</msg>
-<status status="PASS" starttime="20240223 23:37:44.644" endtime="20240223 23:37:44.759"/>
+<msg timestamp="20240225 23:48:18.576" level="INFO">Typing text 'Andre' into text field 'name=username'.</msg>
+<status status="PASS" starttime="20240225 23:48:18.575" endtime="20240225 23:48:18.645"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
-<arg>id=surname</arg>
-<arg>${low}</arg>
+<arg>name=password</arg>
+<arg>hola123</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20240223 23:37:44.760" level="INFO">Typing text 'gX9KHzOs' into text field 'id=surname'.</msg>
-<status status="PASS" starttime="20240223 23:37:44.760" endtime="20240223 23:37:44.811"/>
+<msg timestamp="20240225 23:48:18.646" level="INFO">Typing text 'hola123' into text field 'name=password'.</msg>
+<status status="PASS" starttime="20240225 23:48:18.645" endtime="20240225 23:48:18.700"/>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>name=comments</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20240225 23:48:18.700" endtime="20240225 23:48:18.719"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
-<arg>id=age</arg>
-<arg>${hex}</arg>
+<arg>name=comments</arg>
+<arg>Test1</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20240223 23:37:44.813" level="INFO">Typing text 'g8Z3vKeqG' into text field 'id=age'.</msg>
-<status status="PASS" starttime="20240223 23:37:44.812" endtime="20240223 23:37:44.866"/>
+<msg timestamp="20240225 23:48:18.720" level="INFO">Typing text 'Test1' into text field 'name=comments'.</msg>
+<status status="PASS" starttime="20240225 23:48:18.719" endtime="20240225 23:48:18.759"/>
 </kw>
-<tag>datrdm</tag>
-<status status="PASS" starttime="20240223 23:37:42.112" endtime="20240223 23:37:44.866"/>
+<kw name="Choose File" library="SeleniumLibrary">
+<arg>${Upload}</arg>
+<arg>${Add}</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<msg timestamp="20240225 23:48:18.760" level="INFO">Sending C:\Users\andre.riquelme\Desktop\TEST1.PNG to browser.</msg>
+<status status="PASS" starttime="20240225 23:48:18.759" endtime="20240225 23:48:18.778"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://html/body/div/div[3]/form/table/tbody/tr[5]/td/input[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240225 23:48:18.778" level="INFO">Clicking element 'xpath://html/body/div/div[3]/form/table/tbody/tr[5]/td/input[2]'.</msg>
+<status status="PASS" starttime="20240225 23:48:18.778" endtime="20240225 23:48:18.808"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://html/body/div/div[3]/form/table/tbody/tr[5]/td/input[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240225 23:48:18.809" level="INFO">Clicking element 'xpath://html/body/div/div[3]/form/table/tbody/tr[5]/td/input[1]'.</msg>
+<status status="PASS" starttime="20240225 23:48:18.809" endtime="20240225 23:48:18.836"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://html/body/div/div[3]/form/table/tbody/tr[5]/td/input[3]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240225 23:48:18.838" level="INFO">Clicking element 'xpath://html/body/div/div[3]/form/table/tbody/tr[5]/td/input[3]'.</msg>
+<status status="PASS" starttime="20240225 23:48:18.838" endtime="20240225 23:48:18.863"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://html/body/div/div[3]/form/table/tbody/tr[6]/td/input[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240225 23:48:18.865" level="INFO">Clicking element 'xpath://html/body/div/div[3]/form/table/tbody/tr[6]/td/input[1]'.</msg>
+<status status="PASS" starttime="20240225 23:48:18.864" endtime="20240225 23:48:18.892"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://html/body/div/div[3]/form/table/tbody/tr[7]/td/select/option[4]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240225 23:48:18.893" level="INFO">Clicking element 'xpath://html/body/div/div[3]/form/table/tbody/tr[7]/td/select/option[4]'.</msg>
+<status status="PASS" starttime="20240225 23:48:18.892" endtime="20240225 23:48:18.918"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://html/body/div/div[3]/form/table/tbody/tr[7]/td/select/option[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240225 23:48:18.919" level="INFO">Clicking element 'xpath://html/body/div/div[3]/form/table/tbody/tr[7]/td/select/option[2]'.</msg>
+<status status="PASS" starttime="20240225 23:48:18.919" endtime="20240225 23:48:18.946"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>name=dropdown</arg>
+<arg>Drop Down Item 6</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20240225 23:48:18.947" level="INFO">Selecting options from selection list 'name=dropdown' by label Drop Down Item 6.</msg>
+<status status="PASS" starttime="20240225 23:48:18.946" endtime="20240225 23:48:18.988"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240225 23:48:21.993" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240225 23:48:18.989" endtime="20240225 23:48:21.994"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://html/body/div/div[3]/form/table/tbody/tr[9]/td/input[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240225 23:48:21.998" level="INFO">Clicking element 'xpath://html/body/div/div[3]/form/table/tbody/tr[9]/td/input[2]'.</msg>
+<status status="PASS" starttime="20240225 23:48:21.997" endtime="20240225 23:48:22.306"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240225 23:48:32.319" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20240225 23:48:22.307" endtime="20240225 23:48:32.320"/>
+</kw>
+<tag>form</tag>
+<status status="PASS" starttime="20240225 23:48:16.494" endtime="20240225 23:48:32.321"/>
 </test>
-<status status="PASS" starttime="20240223 23:37:41.953" endtime="20240223 23:37:44.868"/>
+<status status="PASS" starttime="20240225 23:48:16.367" endtime="20240225 23:48:32.325"/>
 </suite>
 <statistics>
 <total>
 <stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">datrdm</stat>
+<stat pass="1" fail="0" skip="0">form</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Ejercicio2">Ejercicio2</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Ejercicio3">Ejercicio3</stat>
 </suite>
 </statistics>
 <errors>
