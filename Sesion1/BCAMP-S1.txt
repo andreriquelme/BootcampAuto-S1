@@ -1,3 +1,4 @@
+PREGUNTA 1
 //https://blazor-conduit.netlify.app/
 
 ^SIGN UP - NEW USER
@@ -195,3 +196,37 @@ https://dev--taupe-pithivier-3c339a.netlify.app/#/
 	BEGIN
 		OUTPUT My articles, Favorited articles
 	END
+
+
+PREGUNTA 2
+
+
+PREGUNTA 3
+Buenas practicas:
+-Asegurarse que los test cases a automatizar sean relevantes y mantenibles 
+-Definir un scope que sea claro y alcanzable
+-Mantener un codigo limpio y que sea entendible
+
+Malas practicas:
+-Querer automatizar todos los test cases
+-Automatizar test cases de aplicaciones cambiantes constantemente
+
+PREGUNTA 4
+Buenos candidatos:
+-Las tareas que se repiten, test cases que se ejecutan en smoke test
+-Pruebas que tienen un alto impacto en el proyecto
+
+Malos candidatos:
+-Pruebas que no tienen mucho impacto en el proyecto
+-Pruebas que tienen un flujo demasiado complejo
+
+PREGUNTA 5
+BST-UpdateTestCases-Auto-AttedanceSpace-Sprint40
+BST-AddNewUsersQA-ScriptsAuto-Wallboard
+BST-RemoveDeprecatedTestCases-Auto-PerformanceReview
+
+PREGUNTA 6
+Las diferencias son que el Unit testing tiene un menor costo, comprende un limitado scope y se testea solo por partes del codigo.
+En cambio el Integration testing es mucho mas costoso por su complejidad, su scope abarca mas debido a su integracion con componentes, y se testea muchos modulos o en conjunto.
+ 
+
