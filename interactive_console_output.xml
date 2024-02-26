@@ -1,26 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1 (Python 3.10.6 on win32)" generated="20240219 17:21:19.555" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1 (Python 3.10.6 on win32)" generated="20240226 03:49:52.551" rpa="false" schemaversion="4">
 <suite id="s1" name="Robot Interactive Console" source="c:\Users\andre.riquelme\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src\robotframework_ls\vendored\robotframework_interactive\robot_interactive_console.robot">
 <test id="s1-t1" name="Default Task/Test" line="5">
 <kw name="Interpreter Main Loop" library="MainLoop">
-<kw name="GET">
-<var>${response}</var>
-<arg>https://jsonplaceholder.typicode.com/posts/1</arg>
-<msg timestamp="20240219 17:21:20.174" level="FAIL">No keyword with name 'GET' found. Did you mean:
-    BuiltIn.Get Time</msg>
-<status status="FAIL" starttime="20240219 17:21:20.174" endtime="20240219 17:21:20.174"/>
+<kw name="${a} = Generate Random String 7">
+<msg timestamp="20240226 03:49:53.021" level="FAIL">No keyword with name '${a} = Generate Random String 7' found.</msg>
+<status status="FAIL" starttime="20240226 03:49:53.021" endtime="20240226 03:49:53.021"/>
 </kw>
-<kw name="Should Be Equal As Strings" library="BuiltIn">
-<arg>1</arg>
-<arg>${response.json()}[id]</arg>
-<doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="NOT RUN" starttime="20240219 17:21:20.174" endtime="20240219 17:21:20.174"/>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${a}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20240226 03:49:53.022" endtime="20240226 03:49:53.022"/>
 </kw>
-<status status="PASS" starttime="20240219 17:21:19.572" endtime="20240219 17:21:26.157"/>
+<status status="PASS" starttime="20240226 03:49:52.563" endtime="20240226 03:49:55.263"/>
 </kw>
-<status status="PASS" starttime="20240219 17:21:19.572" endtime="20240219 17:21:26.157"/>
+<status status="PASS" starttime="20240226 03:49:52.563" endtime="20240226 03:49:55.263"/>
 </test>
-<status status="PASS" starttime="20240219 17:21:19.555" endtime="20240219 17:21:26.157"/>
+<status status="PASS" starttime="20240226 03:49:52.551" endtime="20240226 03:49:55.264"/>
 </suite>
 <statistics>
 <total>
