@@ -14,7 +14,6 @@ Open iframe
     ${frs} =    Get WebElements    xpath=//ul/li
     FOR    ${fr}    IN    @{frs}
         Log To Console    ${fr.text}
-        #Log to Console    $x("//li")
     END
 
 
