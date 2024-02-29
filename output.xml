@@ -1,123 +1,150 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1 (Python 3.10.6 on win32)" generated="20240226 17:22:37.597" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1 (Python 3.10.6 on win32)" generated="20240229 02:31:35.447" rpa="false" schemaversion="4">
 <suite id="s1" name="ExFinal" source="c:\Users\andre.riquelme\Documents\GitHub\BootcampS3-Andre\Examen\ExFinal.robot">
-<test id="s1-t1" name="Busqueda" line="15">
+<test id="s1-t1" name="Busqueda UI" line="46">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>https://nkrlj.csb.app/</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20240226 17:22:37.765" level="INFO">Opening browser 'chrome' to base url 'https://nkrlj.csb.app/'.</msg>
-<status status="PASS" starttime="20240226 17:22:37.764" endtime="20240226 17:22:40.485"/>
+<msg timestamp="20240229 02:31:35.635" level="INFO">Opening browser 'chrome' to base url 'https://nkrlj.csb.app/'.</msg>
+<status status="PASS" starttime="20240229 02:31:35.635" endtime="20240229 02:31:38.053"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>4</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20240226 17:22:44.501" level="INFO">Slept 4 seconds</msg>
-<status status="PASS" starttime="20240226 17:22:40.489" endtime="20240226 17:22:44.501"/>
+<msg timestamp="20240229 02:31:42.059" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20240229 02:31:38.054" endtime="20240229 02:31:42.059"/>
 </kw>
+<kw name="Buscar laptop">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>xpath://input[@class="search-field-input"]</arg>
 <arg>${TEXTO1}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20240226 17:22:44.505" level="INFO">Typing text 'laptop' into text field 'xpath://input[@class="search-field-input"]'.</msg>
-<status status="PASS" starttime="20240226 17:22:44.503" endtime="20240226 17:22:44.650"/>
+<msg timestamp="20240229 02:31:42.065" level="INFO">Typing text 'laptop' into text field 'xpath://input[@class="search-field-input"]'.</msg>
+<status status="PASS" starttime="20240229 02:31:42.062" endtime="20240229 02:31:42.159"/>
 </kw>
+<status status="PASS" starttime="20240229 02:31:42.061" endtime="20240229 02:31:42.159"/>
+</kw>
+<kw name="Click en search">
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>xpath://button[@class="search-field-button"]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20240226 17:22:44.651" level="INFO">Clicking button 'xpath://button[@class="search-field-button"]'.</msg>
-<status status="PASS" starttime="20240226 17:22:44.650" endtime="20240226 17:22:44.702"/>
+<msg timestamp="20240229 02:31:42.160" level="INFO">Clicking button 'xpath://button[@class="search-field-button"]'.</msg>
+<status status="PASS" starttime="20240229 02:31:42.160" endtime="20240229 02:31:42.202"/>
+</kw>
+<status status="PASS" starttime="20240229 02:31:42.160" endtime="20240229 02:31:42.202"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20240226 17:22:46.717" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20240226 17:22:44.703" endtime="20240226 17:22:46.718"/>
+<msg timestamp="20240229 02:31:44.206" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20240229 02:31:42.202" endtime="20240229 02:31:44.207"/>
 </kw>
+<kw name="Buscar java">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@class="search-field-input"]</arg>
+<arg>${TEXTO2}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240229 02:31:44.212" level="INFO">Typing text 'java' into text field 'xpath://input[@class="search-field-input"]'.</msg>
+<status status="PASS" starttime="20240229 02:31:44.211" endtime="20240229 02:31:44.357"/>
+</kw>
+<status status="PASS" starttime="20240229 02:31:44.209" endtime="20240229 02:31:44.357"/>
+</kw>
+<kw name="Click en search">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button[@class="search-field-button"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240229 02:31:44.359" level="INFO">Clicking button 'xpath://button[@class="search-field-button"]'.</msg>
+<status status="PASS" starttime="20240229 02:31:44.358" endtime="20240229 02:31:44.398"/>
+</kw>
+<status status="PASS" starttime="20240229 02:31:44.358" endtime="20240229 02:31:44.398"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240229 02:31:46.403" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20240229 02:31:44.399" endtime="20240229 02:31:46.403"/>
+</kw>
+<kw name="Buscar lima">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@class="search-field-input"]</arg>
+<arg>${TEXTO3}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240229 02:31:46.408" level="INFO">Typing text 'lima' into text field 'xpath://input[@class="search-field-input"]'.</msg>
+<status status="PASS" starttime="20240229 02:31:46.406" endtime="20240229 02:31:46.529"/>
+</kw>
+<status status="PASS" starttime="20240229 02:31:46.405" endtime="20240229 02:31:46.529"/>
+</kw>
+<kw name="Click en search">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button[@class="search-field-button"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240229 02:31:46.531" level="INFO">Clicking button 'xpath://button[@class="search-field-button"]'.</msg>
+<status status="PASS" starttime="20240229 02:31:46.530" endtime="20240229 02:31:46.564"/>
+</kw>
+<status status="PASS" starttime="20240229 02:31:46.530" endtime="20240229 02:31:46.565"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240229 02:31:48.578" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20240229 02:31:46.565" endtime="20240229 02:31:48.578"/>
+</kw>
+<kw name="Validar el historial 1">
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>xpath://html/body/div/div/ul[1]/li[1]</arg>
 <arg>${TEXTO1}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20240226 17:22:46.722" level="INFO">Verifying element 'xpath://html/body/div/div/ul[1]/li[1]' contains exact text 'laptop'.</msg>
-<status status="PASS" starttime="20240226 17:22:46.720" endtime="20240226 17:22:46.778"/>
+<msg timestamp="20240229 02:31:48.581" level="INFO">Verifying element 'xpath://html/body/div/div/ul[1]/li[1]' contains exact text 'laptop'.</msg>
+<status status="PASS" starttime="20240229 02:31:48.579" endtime="20240229 02:31:48.614"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>xpath://html/body/div/div/ul[2]/li[1]</arg>
 <arg>${TEXTO1}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20240226 17:22:46.782" level="INFO">Verifying element 'xpath://html/body/div/div/ul[2]/li[1]' contains exact text 'laptop'.</msg>
-<status status="PASS" starttime="20240226 17:22:46.780" endtime="20240226 17:22:46.876"/>
+<msg timestamp="20240229 02:31:48.615" level="INFO">Verifying element 'xpath://html/body/div/div/ul[2]/li[1]' contains exact text 'laptop'.</msg>
+<status status="PASS" starttime="20240229 02:31:48.614" endtime="20240229 02:31:48.633"/>
 </kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>xpath://input[@class="search-field-input"]</arg>
-<arg>${TEXTO2}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20240226 17:22:46.878" level="INFO">Typing text 'java' into text field 'xpath://input[@class="search-field-input"]'.</msg>
-<status status="PASS" starttime="20240226 17:22:46.877" endtime="20240226 17:22:46.985"/>
+<status status="PASS" starttime="20240229 02:31:48.579" endtime="20240229 02:31:48.633"/>
 </kw>
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>xpath://button[@class="search-field-button"]</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20240226 17:22:46.987" level="INFO">Clicking button 'xpath://button[@class="search-field-button"]'.</msg>
-<status status="PASS" starttime="20240226 17:22:46.986" endtime="20240226 17:22:47.048"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20240226 17:22:49.050" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20240226 17:22:47.049" endtime="20240226 17:22:49.051"/>
-</kw>
+<kw name="Validar el historial 2">
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>xpath://html/body/div/div/ul[1]/li[2]</arg>
 <arg>${TEXTO2}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20240226 17:22:49.054" level="INFO">Verifying element 'xpath://html/body/div/div/ul[1]/li[2]' contains exact text 'java'.</msg>
-<status status="PASS" starttime="20240226 17:22:49.052" endtime="20240226 17:22:49.097"/>
+<msg timestamp="20240229 02:31:48.635" level="INFO">Verifying element 'xpath://html/body/div/div/ul[1]/li[2]' contains exact text 'java'.</msg>
+<status status="PASS" starttime="20240229 02:31:48.634" endtime="20240229 02:31:48.654"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>xpath://html/body/div/div/ul[2]/li[2]</arg>
 <arg>${TEXTO2}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20240226 17:22:49.100" level="INFO">Verifying element 'xpath://html/body/div/div/ul[2]/li[2]' contains exact text 'java'.</msg>
-<status status="PASS" starttime="20240226 17:22:49.098" endtime="20240226 17:22:49.136"/>
+<msg timestamp="20240229 02:31:48.655" level="INFO">Verifying element 'xpath://html/body/div/div/ul[2]/li[2]' contains exact text 'java'.</msg>
+<status status="PASS" starttime="20240229 02:31:48.654" endtime="20240229 02:31:48.669"/>
 </kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>xpath://input[@class="search-field-input"]</arg>
-<arg>${TEXTO3}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20240226 17:22:49.139" level="INFO">Typing text 'lima' into text field 'xpath://input[@class="search-field-input"]'.</msg>
-<status status="PASS" starttime="20240226 17:22:49.138" endtime="20240226 17:22:49.312"/>
+<status status="PASS" starttime="20240229 02:31:48.634" endtime="20240229 02:31:48.669"/>
 </kw>
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>xpath://button[@class="search-field-button"]</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20240226 17:22:49.314" level="INFO">Clicking button 'xpath://button[@class="search-field-button"]'.</msg>
-<status status="PASS" starttime="20240226 17:22:49.313" endtime="20240226 17:22:49.404"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20240226 17:22:51.417" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20240226 17:22:49.405" endtime="20240226 17:22:51.417"/>
-</kw>
+<kw name="Validar el historial 3">
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>xpath://html/body/div/div/ul[1]/li[3]</arg>
 <arg>${TEXTO3}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20240226 17:22:51.419" level="INFO">Verifying element 'xpath://html/body/div/div/ul[1]/li[3]' contains exact text 'lima'.</msg>
-<status status="PASS" starttime="20240226 17:22:51.418" endtime="20240226 17:22:51.439"/>
+<msg timestamp="20240229 02:31:48.671" level="INFO">Verifying element 'xpath://html/body/div/div/ul[1]/li[3]' contains exact text 'lima'.</msg>
+<status status="PASS" starttime="20240229 02:31:48.670" endtime="20240229 02:31:48.682"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>xpath://html/body/div/div/ul[2]/li[3]</arg>
 <arg>${TEXTO3}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20240226 17:22:51.441" level="INFO">Verifying element 'xpath://html/body/div/div/ul[2]/li[3]' contains exact text 'lima'.</msg>
-<status status="PASS" starttime="20240226 17:22:51.440" endtime="20240226 17:22:51.460"/>
+<msg timestamp="20240229 02:31:48.683" level="INFO">Verifying element 'xpath://html/body/div/div/ul[2]/li[3]' contains exact text 'lima'.</msg>
+<status status="PASS" starttime="20240229 02:31:48.682" endtime="20240229 02:31:48.695"/>
+</kw>
+<status status="PASS" starttime="20240229 02:31:48.670" endtime="20240229 02:31:48.695"/>
 </kw>
 <tag>busq</tag>
-<status status="PASS" starttime="20240226 17:22:37.763" endtime="20240226 17:22:51.461"/>
+<status status="PASS" starttime="20240229 02:31:35.634" endtime="20240229 02:31:48.696"/>
 </test>
-<status status="PASS" starttime="20240226 17:22:37.600" endtime="20240226 17:22:51.463"/>
+<status status="PASS" starttime="20240229 02:31:35.450" endtime="20240229 02:31:48.697"/>
 </suite>
 <statistics>
 <total>
